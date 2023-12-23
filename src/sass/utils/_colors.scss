@@ -1,0 +1,15 @@
+$colors: (
+  'primary-color-700': #4a56e2,
+  'primary-color-500': #6e78e8,
+  'primary-color-400': #c5baff,
+  'secondary-color': #ffd8d0,
+  'calltoaction-color': #24cca7,
+  'attention-color': #ff6596,
+  'background-color': #ffffff,
+  'background-color-secondary': #e7eaf2,
+  'text-color': #000000,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
