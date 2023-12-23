@@ -1,12 +1,70 @@
+@import '../sass/utils/colors';
+@import '../sass/utils/fonts';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+  color: getColor('attention-color');
+}
+
+h1,
+h2 {
+  font-family: $font-primary;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: $font-secondary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: getColor('text-color');
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .app-container {
   text-align: center;
   margin: 20px;
+  font-family: $font-secondary;
 }
 
 .app-title {
-  color: #3b0606;
+  color: getColor('text-color');
+  font-size: getFontSize('huge');
 }
 
 .app-description {
-  color: #666;
+  color: getColor('calltoaction-color');
+  font-size: getFontSize('medium');
 }
